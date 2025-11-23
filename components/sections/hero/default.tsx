@@ -46,7 +46,7 @@ export default function Hero({
   badge = (
     <Badge variant="outline" className="animate-appear">
       <span className="text-muted-foreground">
-        New version of Launch UI is out!
+       Learn about a life changing Water Technology
       </span>
       <a href={siteConfig.getStartedUrl} className="flex items-center gap-1">
         Get started
