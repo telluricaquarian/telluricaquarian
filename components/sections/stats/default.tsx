@@ -1,16 +1,15 @@
-import { siteConfig } from "@/config/site";
-
+import { cn } from "@/lib/utils";
 import { Section } from "../../ui/section";
 
-interface StatItemProps {
-  label?: string;
-  value: string | number;
+type StatItem = {
+  label: string;
+  value: number | string;
   suffix?: string;
   description?: string;
-}
+};
 
 interface StatsProps {
-  items?: StatItemProps[] | false;
+  items?: StatItem[] | false;
   className?: string;
 }
 
@@ -18,62 +17,54 @@ export default function Stats({
   items = [
     {
       label: "used by",
-      value: Math.round(siteConfig.stats.figma / 100) / 10,
+      value: 1.5,
       suffix: "k",
-      description: "designers on Figma Community",
+      description: "designers, builders & founders",
     },
     {
-      label: "over",
-      value: siteConfig.stats.github,
-      description: "clones and forks of the template on Github",
+      label: "components",
+      value: 40,
+      suffix: "+",
+      description: "production-ready UI pieces",
     },
     {
-      label: "already",
-      value: Math.round(siteConfig.stats.cli / 100) / 10,
-      suffix: "k",
-      description: "installations with shadcn/ui CLI",
-    },
-    {
-      label: "includes",
-      value: siteConfig.stats.sections,
-      description: "blocks and sections",
+      label: "sections",
+      value: 20,
+      suffix: "+",
+      description: "hero, pricing, FAQ & more",
     },
   ],
-  className,
+  className = "",
 }: StatsProps) {
   return (
-    <Section className={className}>
-      <div className="container mx-auto max-w-[960px]">
+    <Section className={cn(className)}>
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4">
         {items !== false && items.length > 0 && (
-          <div className="grid grid-cols-2 gap-12 sm:grid-cols-4">
-            {items.map((item, index) => (
+          <dl className="grid gap-6 sm:grid-cols-3">
+            {items.map((item) => (
               <div
-                key={index}
-                className="flex flex-col items-start gap-3 text-left"
+                key={item.label}
+                className="rounded-2xl border border-border/60 bg-background/60 p-6 text-left"
               >
-                {item.label && (
-                  <div className="text-muted-foreground text-sm font-semibold">
-                    {item.label}
-                  </div>
-                )}
-                <div className="flex items-baseline gap-2">
-                  <div className="from-foreground to-foreground dark:to-brand bg-linear-to-r bg-clip-text text-4xl font-medium text-transparent drop-shadow-[2px_1px_24px_var(--brand-foreground)] transition-all duration-300 sm:text-5xl md:text-6xl">
-                    {item.value}
-                  </div>
+                <dt className="text-sm font-medium text-muted-foreground">
+                  {item.label}
+                </dt>
+                <dd className="mt-2 flex items-baseline gap-1 text-3xl font-semibold">
+                  <span>{item.value}</span>
                   {item.suffix && (
-                    <div className="text-brand text-2xl font-semibold">
+                    <span className="text-xl text-muted-foreground">
                       {item.suffix}
-                    </div>
+                    </span>
                   )}
-                </div>
+                </dd>
                 {item.description && (
-                  <div className="text-muted-foreground text-sm font-semibold text-pretty">
+                  <p className="mt-2 text-sm text-muted-foreground">
                     {item.description}
-                  </div>
+                  </p>
                 )}
               </div>
             ))}
-          </div>
+          </dl>
         )}
       </div>
     </Section>
