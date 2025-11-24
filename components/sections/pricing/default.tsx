@@ -1,6 +1,5 @@
 import { User, Users } from "lucide-react";
 
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 import { PricingColumn, PricingColumnProps } from "../../ui/pricing-column";
@@ -44,14 +43,14 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access",
-        href: "/pricing", // <-- CHANGED from siteConfig.pricing.pro
+        href: "/pricing", // adjust later if you have a real checkout URL
       },
       features: [
-        `${siteConfig.stats.websiteTemplates} website templates`,
-        `${siteConfig.stats.appTemplates} app templates`,
-        `${siteConfig.stats.sections} blocks and sections`,
-        `${siteConfig.stats.illustrations} illustrations`,
-        `${siteConfig.stats.animations} custom animations`,
+        "Multiple website templates included",
+        "App templates included",
+        "Premium blocks and sections",
+        "Custom illustrations",
+        "Custom animations",
       ],
       variant: "glow-brand",
     },
@@ -64,10 +63,10 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access for your team",
-        href: "/pricing", // <-- CHANGED from siteConfig.pricing.team
+        href: "/pricing", // adjust later if you want a separate team link
       },
       features: [
-        "All the templates, components and sections available for your entire team",
+        "All templates, components and sections for your entire team",
       ],
       variant: "glow",
     },
