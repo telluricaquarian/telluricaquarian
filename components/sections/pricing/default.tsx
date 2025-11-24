@@ -44,7 +44,7 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access",
-        href: siteConfig.pricing.pro,
+        href: "/pricing", // <-- CHANGED from siteConfig.pricing.pro
       },
       features: [
         `${siteConfig.stats.websiteTemplates} website templates`,
@@ -64,7 +64,7 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access for your team",
-        href: siteConfig.pricing.team,
+        href: "/pricing", // <-- CHANGED from siteConfig.pricing.team
       },
       features: [
         "All the templates, components and sections available for your entire team",
