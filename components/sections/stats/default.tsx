@@ -1,5 +1,7 @@
-import { cn } from "@/lib/utils";
+/* eslint-disable simple-import-sort/imports */
+
 import { Section } from "../../ui/section";
+import { cn } from "@/lib/utils";
 
 type StatItem = {
   label: string;
