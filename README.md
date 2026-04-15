@@ -7,9 +7,9 @@ I build premium websites and AI-powered automation systems designed for speed, l
 ## 🚀 Systems
 
 ### AI Agent Systems (Hermes)
-- Voice + automation agents running 24/7
-- Lead capture, qualification, and response
-- Built for real-world business workflows
+- Voice + automation agents operating 24/7
+- Lead capture, qualification, and real-time response
+- Designed for real-world business workflows
 
 ### Automation Infrastructure
 - Speed-to-lead systems
@@ -18,12 +18,22 @@ I build premium websites and AI-powered automation systems designed for speed, l
 
 ### Premium Website Builds
 - Conversion-focused landing pages
-- High-performance Next.js builds
+- High-performance Next.js applications
 - Fully integrated with automation systems
 
 ---
 
-## 🧠 Stack
+## 🧠 Capabilities
+
+- Designing high-conversion digital systems
+- Building AI-powered automation workflows
+- Implementing voice + agent-based experiences
+- Structuring end-to-end lead pipelines
+- Deploying scalable, production-ready applications
+
+---
+
+## ⚙️ Stack
 
 - Next.js (App Router)
 - React
@@ -34,18 +44,19 @@ I build premium websites and AI-powered automation systems designed for speed, l
 
 ---
 
-## ⚙️ Infrastructure
+## 🏗️ Infrastructure
 
 Built using production-grade infrastructure:
+
 - Vercel (hosting & deployment)
 - GitHub (version control)
 - Modern web + AI tooling
 
-*Note: Infrastructure follows industry standards (SOC2 / ISO practices via providers)*
+*Note: Infrastructure aligns with industry standards (SOC2 / ISO practices via providers)*
 
 ---
 
-## 🔗 Live
+## 🔗 Live Systems
 
 - https://areculateirhermes.vercel.app
 - https://areculateirservices.vercel.app
@@ -54,6 +65,6 @@ Built using production-grade infrastructure:
 
 ## 📩 Work With Me
 
-- Join the waitlist
-- Speak with an AI agent
-- Build a system
+- Join the waitlist  
+- Speak with an AI agent  
+- Build a system  
